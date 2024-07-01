@@ -1,23 +1,27 @@
 {
   "name": "abc-test-npm",
-  "version": "1.0.1",
-  "description": "Your package description",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "A sample TypeScript npm package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/your-repo-name.git"
   },
   "keywords": [
-    "your",
-    "keywords"
+    "typescript",
+    "npm-package"
   ],
   "author": "Your Name",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yourusername/your-repo-name/issues"
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "ts-jest": "^29.0.0",
+    "jest": "^29.0.0"
   },
-  "homepage": "https://github.com/yourusername/your-repo-name#readme"
+  "dependencies": {}
 }
